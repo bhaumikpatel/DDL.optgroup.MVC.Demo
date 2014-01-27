@@ -8,7 +8,7 @@ Nuget Package [<i class="icon-share"></i> DropDownList.Optgroup.MVC](http://www.
 
 To install *DDL.optgroup.MVC*, run the following command in the Package Manager Console
 
-> **PM> Install-Package Microsoft.AspNet.Mvc**
+> **PM> Install-Package DropDownList.Optgroup.MVC**
 
 #### **Document** - Using Database Context
 ```
