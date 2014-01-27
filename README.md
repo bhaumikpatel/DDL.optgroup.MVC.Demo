@@ -3,7 +3,7 @@ HTML5 &lt;optgroup&gt; tag in MVC
 There is no built-in support in the framework for this kind of drop down lists.
 
 ----------
-Nuget Package [<i class="icon-share"></i> DDL.optgroup.MVC](#publish-a-document)
+Nuget Package [<i class="icon-share"></i> DropDownList.Optgroup.MVC](http://www.nuget.org/packages/DropDownList.Optgroup.MVC/)
 ---------
 
 To install *DDL.optgroup.MVC*, run the following command in the Package Manager Console
