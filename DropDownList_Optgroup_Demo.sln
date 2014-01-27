@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropDownList_Optgroup_Demo", "DropDownList_Optgroup_Demo\DropDownList_Optgroup_Demo.csproj", "{00671D02-7068-41D6-B6ED-2D30158A364B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00671D02-7068-41D6-B6ED-2D30158A364B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00671D02-7068-41D6-B6ED-2D30158A364B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00671D02-7068-41D6-B6ED-2D30158A364B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00671D02-7068-41D6-B6ED-2D30158A364B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

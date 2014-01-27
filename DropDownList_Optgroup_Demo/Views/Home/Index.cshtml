@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Index";
+    IEnumerable<GroupedSelectListItem> item;
+    item = new List<GroupedSelectListItem> { 
+        new GroupedSelectListItem() { Value = "volvo", Text = "Volvo", GroupName = "Swedish Cars", GroupKey = "1", Disabled = true },
+        new GroupedSelectListItem() { Value = "saab", Text = "Saab",GroupName = "Swedish Cars", GroupKey = "1" }, 
+        new GroupedSelectListItem() { Value = "mercedes", Text = "Mercedes", GroupName = "German Cars", GroupKey = "2" },
+        new GroupedSelectListItem() { Value = "audi", Text = "Audi", GroupName = "German Cars", GroupKey = "2",Selected = true }};
+}
+<h2>
+    HTML optgroup tag MVC</h2>
+@using (Ajax.BeginForm("Index", null, new AjaxOptions { HttpMethod = "post" }, new { id = "frm" }))
+{
+    @Html.DropDownGroupList("Cars", item, "-- Select Car --", new Dictionary<string, object>() { { "data-val", "true" }, { "data-val-required", "The Car field is required." } })
+    <input type="submit" name="name" value="Send" />
+}
+<b>DATA</b>
+<pre>
+IEnumerable&lt;GroupedSelectListItem&gt; item;
+    item = new List&lt;GroupedSelectListItem&gt; { 
+        new GroupedSelectListItem() { Value = &quot;volvo&quot;, Text = &quot;Volvo&quot;, GroupName = &quot;Swedish Cars&quot;, GroupKey = &quot;1&quot;, Disabled = true },
+        new GroupedSelectListItem() { Value = &quot;saab&quot;, Text = &quot;Saab&quot;,GroupName = &quot;Swedish Cars&quot;, GroupKey = &quot;1&quot; }, 
+        new GroupedSelectListItem() { Value = &quot;mercedes&quot;, Text = &quot;Mercedes&quot;, GroupName = &quot;German Cars&quot;, GroupKey = &quot;2&quot; },
+        new GroupedSelectListItem() { Value = &quot;audi&quot;, Text = &quot;Audi&quot;, GroupName = &quot;German Cars&quot;, GroupKey = &quot;2&quot;,Selected = true }};
+</pre>
+<b>FORM</b>
+<pre>
+@@using (Ajax.BeginForm(&quot;Index&quot;, null, new AjaxOptions { HttpMethod = &quot;post&quot; }, new { id = &quot;frm&quot; }))
+{
+    @@Html.DropDownGroupList(&quot;Cars&quot;, item, &quot;-- Select Car --&quot;, new Dictionary&lt;string, object&gt;() { { &quot;data-val&quot;, &quot;true&quot; }, { &quot;data-val-required&quot;, &quot;The Car field is required.&quot; } })
+    &lt;input type=&quot;submit&quot; name=&quot;name&quot; value=&quot;Send&quot; /&gt;
+}
+</pre>
+<div class="nuget-badge">
+    <code>PM> Install-Package DDL.optgroup.MVC </code>
+</div>
